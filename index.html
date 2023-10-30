@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="index.css">
+    <script src="https://kit.fontawesome.com/e761cef6bb.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a target="_blank" href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+    <div class="header">
+        <h1>Md Abu Obaida Zishan</h1>
+        <div>
+            <span><a target="_blank" href="https://github.com/MohammedZ666"><i class="fa-brands fa-github-alt"></i>
+                    MohammedZ666</a></span>
+            <span class="bar">|</span>
+            <span><a target="_blank" href="https://www.linkedin.com/in/md-abu-obaida-zishan/"> <i
+                        class="fa-brands fa-linkedin"> </i>
+                    md-abu-obaida-zishan</a></span>
+            <span class="bar">|</span>
+            <span><a target="_blank" href="mailto:abuobaidazishan@gmail.com"> <i class="fa-solid fa-envelope fa-sm"></i>
+                    abuobaidazishan@gmail.com</a></span>
+            <br>
+            <span><a target="_blank" href="tel:+8801837322980"> <i class="fa-solid fa-mobile fa-sm"></i>
+                    +8801837322980</a></span>
+
+        </div>
+    </div>
+
+    <div>
+        <h2>Work Experience</h2>
+        <hr />
+        <div class="subsubheader">
+            <h4> Associate Web Developer</h4>
+            <h4> October 2021 - May 2022</h4>
+        </div>
+        Worked at <a target="_blank" href="https://www.linkedin.com/company/brainekt/">brainekt</a> with MERN stack
+        (MongoDB, Express,
+        React, and, Node.js) <a target="_blank"
+            href="https://drive.google.com/file/d/1DbrYAG5EqiOHgw_HAINL9JjAYUXG_BCq/view?usp=sharing">
+            (certification) </a>.
+    </div>
+
+    <div>
+        <h2>Projects</h2>
+        <hr />
+        <div>
+            <div class="subsubheader">
+                <div> <b>Speech transcription (Spring boot, ReactJs) </b></div>
+                <div> <a target="_blank" href="https://github.com/MohammedZ666/speech-corpus-transcription"> <i
+                            class="fa-brands fa-github-alt"> </i> github</a>
+                    <span class="bar">|</span>
+                    <a target="_blank"
+                        href="https://hub.docker.com/repository/docker/mohammedz666/speech-transcription/general"> <i
+                            class="fa-brands fa-docker"> </i> dockerhub</a>
+                    <span class="bar">|</span>
+                    <a target="_blank" href="https://youtu.be/e0Nc5J15UvU?si=Wi_CuNL938RyBQHP"> <i
+                            class="fa-brands fa-youtube"> </i> demo</a>
+                </div>
+            </div>
+            <p>Developed a web app to transcript English audio and video files. Spring boot and ReactJS were used for
+                the
+                backend and frontend respectively. <em>Github CI/CD</em> was used to build and deploy the project to
+                <em>Docker</em>. Video files had to be converted to audio for transcription for which <em>FFmpeg</em>
+                command
+                line utility was used. The pip package <em>whisper</em> was used for transcribing audio files. FFmpeg
+                and
+                whisper were used through the Java-ProcessBuilder package since they were both command-line
+                applications.
+                Output
+                from the two command line utilities was parsed with regex for tracking progress. The simple
+                ReactJS-based UI
+                allows the uploading of audio and video files for transcription, playing the files, and showing
+                progress.
+                After
+                the transcription is complete an srt subtitle file is downloaded which can be used to display the
+                subtitles
+                for
+                any video file and for reading the transcription as text.
+            </p>
+        </div>
+        <div>
+            <div class="subsubheader">
+                <div> <b>ECGNet (Embedded System, Tensorflow, C++) </b></div>
+                <div> <a target="_blank" href="https://github.com/MohammedZ666/ECGNet"> <i
+                            class="fa-brands fa-github-alt"> </i> github</a>
+                </div>
+            </div>
+            <p>Developed a neural network (ECGNet) to detect abnormal heartbeat (Arrhythmia) tailored for the ATMega328
+                microcontroller and other similar models as a part of my undergraduate thesis. This neural network model
+                is efficient enough in compute and size to be run in a low compute system with less than 2KB SRAM and
+                25KB of program memory. Training was performed in google-colab with tensorflow (python). After training,
+                the model weights were compiled in a cpp header file to be included in the MCU program for detecting
+                arrhythmia. Programming for the MCU was done without default utilities like the digitalRead(),
+                analogRead() and the Serial class for memory efficiency. Instead, standard avr header files were used to
+                write code for UART communication and digital/analog pin reading/writing. The Arduino IDE was not used,
+                instead the program was compiled and deployed using avr-g++ compiler and avrdude command line tool.
+                Testing and debugging was performed with the minicom cli in a linux-based environment (pop-os).
+            </p>
+        </div>
+        <div>
+            <div class="subsubheader">
+                <div> <b>Video Editor (MERN Stack) </b></div>
+                <div> <a target="_blank" href="https://github.com/MohammedZ666/mern_video_editor"> <i
+                            class="fa-brands fa-github-alt"> </i> github</a>
+                    <span class="bar">|</span>
+                    <a target="_blank" href="https://youtube.com/playlist?list=PLJqFmW-fvuRSBH2nKe8eTTacxA_PCcRoM"> <i
+                            class="fa-brands fa-youtube"> </i> demo</a>
+                </div>
+            </div>
+            <p>Implemented an e-commerce platform with the MERN stack. Implemented user login/registration,
+                multi-product-based orders, product query with category/keywords and cart system. The cart system
+                remembers the last interrupted session. Implemented sending email notifications on order updates to
+                users from the backend as well.
+            </p>
+        </div>
+        <div>
+            <div class="subsubheader">
+                <div> <b>Android app for technicians (Flutter) </b></div>
+                <div> <a target="_blank" href="https://github.com/MohammedZ666/dinmojur"> <i
+                            class="fa-brands fa-github-alt"> </i> github</a>
+                    <span class="bar">|</span>
+                    <a target="_blank" href="https://play.google.com/store/apps/details?id=com.app.dinmojur"> <i
+                            class="fa-brands fa-google-play"> </i>
+                        playstore</a>
+                </div>
+            </div>
+            <p>Developed an android app with flutter for my startup to connect technicians with customers to help them
+                find jobs. Allows technicians to search for jobs and users to post jobs through the same app close to
+                their location. Implemented user login/registration, job posting, and, location-based job query. The app
+                is developed through dart's flutter library and Firebase. Abandoned the project due to covid.
+            </p>
+        </div>
+        <div>
+            <div class="subsubheader">
+                <div> <b>Android app (Java) for printing prescriptions </b></div>
+                <div> <a target="_blank" href="https://github.com/MohammedZ666/prescription2/"> <i
+                            class="fa-brands fa-github-alt"> </i> github</a>
+                    <span class="bar">|</span>
+                    <a target="_blank" href="https://youtu.be/DPyewRqpaq4"> <i class="fa-brands fa-youtube"> </i>
+                        demo</a>
+                </div>
+            </div>
+            <p>Developed an android app (java) for physicians to print prescriptions from an android phone. Implemented
+                patient data fill-in and easy drug query through auto-completion. Includes the
+                <em>auto-prescription</em> feature that remembers recent prescriptions for each disease which can be
+                generated instantly. Also includes pre-written instructions for patients. Past prescriptions can be
+                searched and re-printed too. The drug database contains most medicine consumed in Bangladesh.
+            </p>
+        </div>
+
+        <h2>Open Source Contributions</h2>
+        <hr />
+        <div>
+            <div class="subsubheader">
+                <div> <b>Pytorch </b></div>
+                <div> <a target="_blank" href="https://github.com/pytorch/pytorch/issues/91568"> <i
+                            class="fa-solid fa-code-pull-request"></i> PR</a>
+                    <span class="bar">|</span>
+                    <a target="_blank"
+                        href="https://github.com/pytorch/pytorch/commit/84b819d0837abc6222493a7da7fab273b7041bf2"> <i
+                            class="fa-solid fa-code-commit"></i> Commit</a>
+                </div>
+            </div>
+            <p>Fixed torch.hub module to load downloaded models in the offline mode. PyTorch is a popular machine
+                learning framework based on the Torch library, developed by Meta AI
+                (<a target="_blank" href="https://pytorch.org/">learn more</a>).
+            </p>
+        </div>
+        <div>
+            <div class="subsubheader">
+                <div> <b>OpenBot </b></div>
+                <div> <a target="_blank" href="https://github.com/isl-org/OpenBot/pull/212"> <i
+                            class="fa-solid fa-code-pull-request"></i> PR</a>
+                    <span class="bar">|</span>
+                    <a target="_blank" href="https://github.com/isl-org/OpenBot/commits?author=MohammedZ666"> <i
+                            class="fa-solid fa-code-commit"></i> Commit</a>
+                </div>
+            </div>
+            <p>Added backward compatibility and app crash fix in the OpenBot robot app which leverages smartphones as
+                brains for deep-learning-based, self-driving, low-cost robots (<a target="_blank"
+                    href="https://www.openbot.org/">learn more</a>).
+            </p>
+        </div>
+        <h2>Publications</h2>
+        <hr />
+        Zishan, Md Abu Obaida et al. (2022). “Low-Cost, Low-Power, and Low-Compute Based ECG Monitoring Systems:
+        Comparative Analysis and Beyond”. In: <em>2022 International Conference on Innovation and Intelligence for
+            Informatics, Computing, and Technologies (3ICT)</em>, pp. 401-407. DOI: <a target="_blank" href="10.1109/
+        3ICT56508.2022.9990730">10.1109/
+            3ICT56508.2022.9990730</a>.
+        <h2>Undergraduate Thesis</h2>
+        <hr />
+        Zishan, Md Abu Obaida et al. (N.D.). “Dense Neural Network Based Arrhythmia Classification on Low-cost and
+        Low-compute Micro-controller”. under-review at <a
+            href="https://www.sciencedirect.com/journal/expert-systems-with-applications">Expert Systems with
+            Applications</a>.
+
+        <h2>Education </h2>
+        <hr />
+        <div class="subsubheader">
+            <div> 2018-2023 </div>
+            <div> B.Sc in Computer Science and Engineering at <em>BRAC University</em></div>
+            <div> (CGPA: 3.32/4.0)</div>
+        </div>
+
+        <footer style="text-align: center; margin-top: 7%;">Last Updated: October 30, 2023</footer>
+
+        <script>
+            // footer = document.getElementsByTagName('footer')[0]
+            // footer.innerText = "Last Updated"
+        </script>
+</body>
+
+</html>

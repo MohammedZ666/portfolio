@@ -1,0 +1,15 @@
+body {
+    margin: 3% 25%;
+}
+
+.header {
+    text-align: center;
+}
+
+.bar {}
+
+.subsubheader {
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+}
