@@ -2,6 +2,10 @@ body {
     margin: 3% 25%;
 }
 
+p {
+    text-align: justify;
+}
+
 .header {
     text-align: center;
 }
